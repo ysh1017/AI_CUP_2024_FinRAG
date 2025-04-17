@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "esun-finrag"
+version = "0.1.0"
+description = "Retrieval‑Augmented Generation baseline for AI‑CUP FinRAG preliminary."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Your Name"}]
+
+dependencies = [
+    "fastapi==0.110.2",
+    "uvicorn[standard]==0.29.0",
+    "openai==1.14.3",
+    "voyageai==0.3.1",
+    "weaviate-client==4.4.3",
+    "langchain==0.2.5",
+    "pydantic==2.7.0",
+    "requests==2.31.0",
+    "python-dateutil==2.9.0.post0",
+    "tiktoken==0.7.0",
+]
+
+[project.optional-dependencies]
+dev = ["ruff==0.4.3", "black==24.4.0", "pre-commit==3.7.0", "pytest==8.1.1"]
